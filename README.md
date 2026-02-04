@@ -11,7 +11,7 @@ Bu proje; kullanıcıların evcil hayvan sahiplenebileceği, kendi hayvanların�
 
 ## 📸 Ekran Görüntüleri
 
-*(Görseller yakında eklenecektir)*
+
 
 | Ana Sayfa | Giriş Yap (Login) | Kayıt Ol (Sign Up) | Hayvan Detay |
 | :---: | :---: | :---: | :---: |
