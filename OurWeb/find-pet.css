@@ -1,0 +1,280 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-color: #f9f9f9;
+    background-image: url('images/Real-Background.jpg');
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+.navbar 
+{
+    border: 4px double black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('images/aaaa.jpg');
+    background-color: #8e79e3;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links 
+{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 10px;
+    padding: 0;
+}
+
+.nav-links a 
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.nav-links a:hover 
+{
+    color: #fff;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+/* Logo */
+.logo-container 
+{
+    flex: 0 0 auto;
+}
+
+.logo 
+{
+    width: 120px;
+    height: auto;
+    border-radius: 100%;
+}
+  /* en tepeden buraya kadar bir çok css'de sabit tuttuk çünkü site bütünlüğü istiyoruz.*/
+.pet-container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /*ızgara düzeni */
+    gap: 20px; /*kartlar arasındaki açıklık.*/
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Pet Kartı */
+.pet-card 
+{
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #000000;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 460px;  
+    margin: 0 auto;  /*kartı merkeze koyuyormuş*/
+}
+ 
+.pet-card img 
+{
+    border: 1px solid #000000;
+    border-radius: 10px; 
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.pet-card h2
+ {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    color: #8e79e3;
+    margin: 10px 0;
+}
+
+.pet-card p 
+{
+    font-size:17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+/* ek açıklama için zımbırtı çabası 
+.advice-box, .faq-box 
+{
+    background-color: rgb(0, 0, 0,0.8);
+    margin: 20px 0;
+    padding: 20px;                                  bunlar gereksiz. ama bir şey olursa düzenleme yapmak için kullanabiliriz. hazırda dursun silme.
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.advice-box h2, .faq-box h2 {
+    color: #8e79e3;
+    margin-bottom: 10px;
+}
+
+.faq-box summary 
+{
+    font-weight: bold;
+    color: #8e79e3;
+}
+ */
+.adopt-button 
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    background-color: #8e79e3;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Butonu en alta sabitle*/
+} 
+
+.adopt-button:hover 
+{
+
+    font-size: 16px;
+    background-color: #6f5dc1;
+    transition: color 0.3s ease;
+
+    /*font-size:medium;*/
+}
+
+
+/* filtreleme kısmı için css*/
+.filter-container 
+{
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #000000;
+    border-radius: 10px; 
+    padding: 15px;
+    color:white;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+}
+
+.filter-container form 
+{
+    display:flex;
+    flex-wrap:nowrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-container label 
+{
+    font-weight: bold;
+    color:white;
+}
+
+.filter-container input,
+.filter-container select 
+{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.filter-button 
+{
+    background-color: #8e79e3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover 
+{
+    background-color: #6f5dc1;
+}
+
+
+ /* alt bar aynı diğer sitelerdeki gibi*/
+.footer 
+{
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.footer-container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section h3 
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul 
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li 
+{
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a 
+{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover 
+{
+    color: #8e79e3;
+}
+
+.footer-bottom 
+{
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}

@@ -1,0 +1,1 @@
+SELECT * FROM pet_adoption.pets;

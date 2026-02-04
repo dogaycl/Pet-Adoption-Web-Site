@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css"> <!-- bu css burada olmsa da diğer php de kullanımda silme sakın.-->
+</head>
+<body>
+    
+    <div class="container">
+        
+        <!-- Arka Plan Kutucuğu  -->
+        <div class="background-box">
+            
+           
+            
+            <!-- Giriş Formu --> <!-- ya bunlar olmaz bebeğim çünkü php lazım dinamik kontroller sağlanmalı.-->
+            <form action="login.php" method="POST" class="login-form">
+                <p>Log in to your account to adopt a pet.</p>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit">Log in</button>
+                <div class="signup-redirect">
+                    Don't have an account? <a href="signup.html">Create One</a>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>   
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Arka Plan Kutusu 
+        <div class="background-box">
+            <!-- Giriş Formu 
+            <form action="login.php" method="POST" class="login-form">
+                <p>Log in to your account to adopt a pet.</p>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit">Log in</button>
+                <div class="signup-redirect">
+                    Don't have an account? <a href="signup.php">Create One</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+-->

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Logo Bölgesi -->
+            <a href="index.html" target="_blank">
+                <div class="logo-container">
+                    <img src="images/Have.jpg" alt="HappyTails Logo" class="logo">
+                </div>
+            </a>
+            <!-- üst kısımdaki linkler. burada log out yok çünkü heniz giriş yapılmadı. -->
+            <ul class="nav-links">
+                <li><a href="index.html">• Home</a></li>
+                <li><a href="http://localhost:8000/find-pet.php">• Find a Pet</a></li>
+                <li><a href="http://localhost:8000/adopt-pet.php">• Adopt a Pet</a></li>
+                <li><a href="about-us.html">• About Us</a></li>
+                <li><a href="help.html">• Help & Advice</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <!--   (log in kısmı.) -->
+            <div class="auth-container">
+                <h><b>Hi there!</b></h>
+                <p class="welcome-text">Welcome to the place where you can adopt our furry friends!</p>
+                <p>Log in or Sign up for the access to adopt a pet.</p>
+                <div class="auth-buttons">
+                    <a href="http://localhost:8000/login.php" class="auth-btn login-btn">Login</a> <!-- linkler direkt olarak link olarak alınmalı yoksa çalışmayabilir.-->
+                    <a href="http://localhost:8000/signup.php" class="auth-btn signup-btn">Sign Up</a>
+                </div>
+            </div>
+
+            <!-- İkinci Kutu (fotoğrafı koyduğumuz yer.) -->
+            <div class="image-container">
+                <img src="images/Main-Background.jpg" alt="Adorable pets">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"> <!-- alt bitiş kısmı burada da welcome.php'de olduğu gibi detaylı.-->
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Have Friends</h3>
+                <p>Your one-stop destination for adopting furry friends!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">• Home</a></li>
+                    <li><a href="http://localhost:8000/find-pet.php">• Find a Pet</a></li>
+                    <li><a href="http://localhost:8000/adopt-pet.php">• Adopt a Pet</a></li>
+                    <li><a href="about-us.html">• About Us</a></li>
+                    <li><a href="help.html">• Help & Advice</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: furkan.tuc.92@gmail.com</p>
+                <p>Phone: +90 537 583 0638</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Have Friends. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
