@@ -14,8 +14,8 @@ Bu proje; kullanıcıların evcil hayvan sahiplenebileceği, kendi hayvanların�
 *(Görseller yakında eklenecektir)*
 
 | Ana Sayfa | Giriş Yap (Login) | Kayıt Ol (Sign Up) | Hayvan Detay |
-| --- | --- | --- | --- |
-|  |  |  |  |
+| :---: | :---: | :---: | :---: |
+| ![Ana Sayfa](image/homepage.png) | ![Giriş](image/login.png) | ![Kayıt](image/signup.png) | ![Detay](image/detail.png) |
 
 ## 🛠 Teknik Detaylar
 
